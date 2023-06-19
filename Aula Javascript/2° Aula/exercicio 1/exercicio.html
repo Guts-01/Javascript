@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to left, #333 , #e07070);
+    
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            gap: 20px;
+            padding: 10px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="p1"> <br>
+        <input type="text" id="p2"> <br>
+        <input type="text" id="p3"> <br>
+        <input type="text" id="p4"> <br>
+        <button id="soma" onclick="Soma()">Média final</button>
+        <h1 id="mediafinal">...</h1>
+    </div>
+
+     <script src="">
+var p1 = document.getElementById("p1");
+var p2 = document.getElementById("p2");
+var p3 = document.getElementById("p3");
+var p4 = document.getElementById("p4");
+var soma;
+var mediafinal= document.getElementById("mediafinal");
+
+function Soma(){
+    soma = parseInt(p1.value) + parseInt(p2.value) + parseInt(p3.value) + parseInt(p4.value);
+    mediafinal.innerHTML = soma/4;
+}
+     </script>
+</body>
+</html>

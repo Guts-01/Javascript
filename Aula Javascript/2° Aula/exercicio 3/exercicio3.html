@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to left, #333 , #e07070);
+    
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            gap: 20px;
+            padding: 10px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="metro">
+        <button id="converter" onclick="METRO()">converter</button>
+    
+        <h1 id="resultado" >resultado</h1>
+    </div>
+    
+    <script>
+        var metro = document.getElementById("metro")
+        var converter ;
+        var resultado = document.getElementById("resultado");
+
+        function METRO() {
+            converter = parseInt(metro.value) * 100
+            resultado.innerHTML = converter
+        }
+    </script>
+</body>
+</html>

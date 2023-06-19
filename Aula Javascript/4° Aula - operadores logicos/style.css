@@ -1,0 +1,13 @@
+body{
+  background: linear-gradient( 40deg, #ccb9b9 0%, #d40f0f 50%, #333 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+main{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+button{
+    margin-top: 10px;
+}

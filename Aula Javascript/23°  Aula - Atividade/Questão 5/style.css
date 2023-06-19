@@ -1,0 +1,11 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.contador{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+.contador{
+    display: grid;
+}
+input{
+    width: 300px;
+    margin: 10px 0;
+    padding: 0;
+}
+label{
+   margin: 10px 0;
+}
+button{
+    width: 200px;
+    margin: 10px 0;
+}
